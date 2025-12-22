@@ -1,13 +1,21 @@
+<<<<<<< HEAD
 # Welcome to your Lovable project
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
+=======
+# Hatzworks Web Project
+
+## Project info
+
+>>>>>>> 50a0f1b (Adding my new updates)
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
+<<<<<<< HEAD
 **Use Lovable**
 
 Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
@@ -17,6 +25,12 @@ Changes made via Lovable will be committed automatically to this repo.
 **Use your preferred IDE**
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+=======
+**Use your preferred IDE**
+
+
+If you want to work locally using your own IDE, you can clone this repo and push changes.
+>>>>>>> 50a0f1b (Adding my new updates)
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -54,6 +68,7 @@ npm run dev
 
 This project is built with:
 
+<<<<<<< HEAD
 - Vite
 - TypeScript
 - React
@@ -71,3 +86,16 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+=======
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+- [shadcn-ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+
+## How can I deploy this project?
+
+You can deploy this project to any static hosting service like [Vercel](https://vercel.com) or [Netlify](https://netlify.com).
+
+>>>>>>> 50a0f1b (Adding my new updates)
