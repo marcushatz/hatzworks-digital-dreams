@@ -24,11 +24,8 @@ const Hero = () => {
       {/* Animated gradient background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-hero" />
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> 50a0f1b (Adding my new updates)
+
         {/* Animated mesh gradient */}
         <motion.div
           className="absolute inset-0"
@@ -50,11 +47,7 @@ const Hero = () => {
         />
 
         {/* Noise texture overlay */}
-<<<<<<< HEAD
-        <div 
-=======
         <div
->>>>>>> 50a0f1b (Adding my new updates)
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
@@ -62,11 +55,7 @@ const Hero = () => {
         />
       </div>
 
-<<<<<<< HEAD
-      <motion.div 
-=======
       <motion.div
->>>>>>> 50a0f1b (Adding my new updates)
         className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
         style={{ y, opacity, scale }}
       >
@@ -113,20 +102,12 @@ const Hero = () => {
                 </AnimatedText>
                 {" "}
                 <span className="relative">
-<<<<<<< HEAD
-                  <span className="relative z-10 bg-gradient-to-r from-teal-light via-teal to-teal-dark bg-clip-text text-transparent">
-                    <AnimatedText delay={0.6}>
-                      Work Magic
-                    </AnimatedText>
-                  </span>
-=======
                   <AnimatedText
                     delay={0.6}
                     className="relative z-10 bg-gradient-to-r from-teal-light via-teal to-teal-dark bg-clip-text text-transparent"
                   >
                     Work Magic
                   </AnimatedText>
->>>>>>> 50a0f1b (Adding my new updates)
                   {/* Glowing underline */}
                   <motion.div
                     className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-teal-light via-teal to-teal-dark rounded-full"
@@ -154,11 +135,7 @@ const Hero = () => {
           >
             Transform your digital presence with{" "}
             <span className="text-teal-light font-medium">stunning</span>,{" "}
-<<<<<<< HEAD
-            <span className="text-teal-light font-medium">high-performance</span> websites 
-=======
             <span className="text-teal-light font-medium">high-performance</span> websites
->>>>>>> 50a0f1b (Adding my new updates)
             designed to captivate your audience and drive measurable results.
           </motion.p>
 
@@ -173,17 +150,9 @@ const Hero = () => {
               Start Your Project
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </MagneticButton>
-<<<<<<< HEAD
-            
-            <Button 
-              variant="heroOutline" 
-              size="xl" 
-=======
-
             <Button
               variant="heroOutline"
               size="xl"
->>>>>>> 50a0f1b (Adding my new updates)
               className="group relative overflow-hidden"
             >
               <motion.span
@@ -244,11 +213,8 @@ const Hero = () => {
               >
                 {/* Glow on hover */}
                 <div className="absolute inset-0 bg-teal/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-<<<<<<< HEAD
-                
-=======
 
->>>>>>> 50a0f1b (Adding my new updates)
+
                 <div className="relative p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-teal/30 transition-colors duration-300">
                   <div className="font-heading text-4xl sm:text-5xl font-bold text-teal-light">
                     <AnimatedCounter to={stat.value} suffix={stat.suffix} />
