@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, Twitter, Instagram, Mail, ArrowUpRight, Heart } from "lucide-react";
+import { Linkedin, Twitter, Instagram, Mail, ArrowUpRight } from "lucide-react";
 import logo from "@/assets/hatzworks-logo.png";
 
 const footerLinks = {
@@ -56,9 +56,9 @@ const Footer = () => {
               >
                 <img src={logo} alt="Hatzworks" className="h-14 w-auto" />
               </motion.a>
-              
+
               <p className="text-primary-foreground/60 leading-relaxed mb-6 max-w-sm">
-                Premium web development studio crafting stunning digital experiences 
+                Premium web development studio crafting stunning digital experiences
                 that drive business growth and captivate audiences worldwide.
               </p>
 
@@ -179,11 +179,9 @@ const Footer = () => {
         <div className="py-6 border-t border-white/5">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/40 text-sm flex items-center gap-1">
-              © {currentYear} Hatzworks. Made with{" "}
-              <Heart className="w-4 h-4 text-rose-500 fill-rose-500" /> 
-              for the web.
+              © {currentYear} Hatzworks.
             </p>
-            
+
             <div className="flex items-center gap-6 text-sm">
               <a href="#" className="text-primary-foreground/40 hover:text-teal-light transition-colors">
                 Privacy Policy
