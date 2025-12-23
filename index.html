@@ -3,6 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
+  <script>
+    if (window.location.hostname.includes("pages.dev")) {
+      window.location.replace("https://hatwebs.com" + window.location.pathname + window.location.search);
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hatzworks | Premium Web Development & Digital Design</title>
   <meta name="description"
