@@ -59,13 +59,13 @@ const projects = [
   },
 ];
 
-const PortfolioCard = ({ 
-  project, 
+const PortfolioCard = ({
+  project,
   index,
   isHovered,
-  onHover 
-}: { 
-  project: typeof projects[0]; 
+  onHover
+}: {
+  project: typeof projects[0];
   index: number;
   isHovered: boolean;
   onHover: (index: number | null) => void;
@@ -81,9 +81,8 @@ const PortfolioCard = ({
       transition={{ duration: 0.6, delay: index * 0.1 }}
       onMouseEnter={() => onHover(index)}
       onMouseLeave={() => onHover(null)}
-      className={`group relative overflow-hidden rounded-3xl cursor-pointer transition-all duration-500 ${
-        index === 0 || index === 3 ? "md:col-span-2 aspect-[2/1]" : "aspect-square"
-      }`}
+      className={`group relative overflow-hidden rounded-3xl cursor-pointer transition-all duration-500 ${index === 0 || index === 3 ? "md:col-span-2 aspect-[2/1]" : "aspect-square"
+        }`}
     >
       {/* Background image with parallax */}
       <motion.div
@@ -100,7 +99,7 @@ const PortfolioCard = ({
 
       {/* Gradient overlay */}
       <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-60 mix-blend-multiply`} />
-      
+
       {/* Dark overlay */}
       <motion.div
         className="absolute inset-0 bg-navy/60"
@@ -110,7 +109,7 @@ const PortfolioCard = ({
       />
 
       {/* Grid pattern */}
-      <div 
+      <div
         className="absolute inset-0 opacity-10"
         style={{
           backgroundImage: `
@@ -226,7 +225,7 @@ const Portfolio = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   return (
-    <section id="portfolio" className="py-32 bg-secondary/30 relative overflow-hidden">
+    <section id="portfolio" className="py-32 bg-gradient-to-br from-secondary to-slate/20 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -256,14 +255,14 @@ const Portfolio = () => {
           >
             Our Portfolio
           </motion.span>
-          
+
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mt-4 mb-6">
             Featured{" "}
             <span className="bg-gradient-to-r from-teal to-teal-dark bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
-          
+
           <p className="text-muted-foreground text-lg lg:text-xl max-w-2xl mx-auto">
             A curated showcase of our finest work, where creativity meets functionality
             to deliver exceptional digital experiences.
@@ -273,9 +272,9 @@ const Portfolio = () => {
         {/* Masonry-style Portfolio Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <PortfolioCard 
-              key={project.title} 
-              project={project} 
+            <PortfolioCard
+              key={project.title}
+              project={project}
               index={index}
               isHovered={hoveredProject === index}
               onHover={setHoveredProject}

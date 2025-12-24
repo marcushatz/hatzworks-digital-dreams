@@ -1,11 +1,11 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { 
-  Globe, 
-  Paintbrush, 
-  ShoppingCart, 
-  Smartphone, 
-  Search, 
+import {
+  Globe,
+  Paintbrush,
+  ShoppingCart,
+  Smartphone,
+  Search,
   Wrench,
   ArrowRight,
   Code2,
@@ -59,13 +59,13 @@ const services = [
   },
 ];
 
-const ServiceCard = ({ 
-  service, 
-  index, 
-  isActive, 
-  onHover 
-}: { 
-  service: typeof services[0]; 
+const ServiceCard = ({
+  service,
+  index,
+  isActive,
+  onHover
+}: {
+  service: typeof services[0];
   index: number;
   isActive: boolean;
   onHover: (index: number | null) => void;
@@ -90,7 +90,7 @@ const ServiceCard = ({
           transition={{ type: "spring", stiffness: 300 }}
         >
           <Icon className="w-8 h-8 text-white" />
-          
+
           {/* Glow effect */}
           <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${service.gradient} blur-xl opacity-50 group-hover:opacity-80 transition-opacity`} />
         </motion.div>
@@ -137,7 +137,7 @@ const Services = () => {
   const [activeCard, setActiveCard] = useState<number | null>(null);
 
   return (
-    <section id="services" className="py-32 bg-background relative overflow-hidden">
+    <section id="services" className="py-32 bg-gradient-to-b from-background via-teal/5 to-background relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal/5 rounded-full blur-3xl" />
@@ -161,16 +161,16 @@ const Services = () => {
           >
             Our Expertise
           </motion.span>
-          
+
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mt-4 mb-6">
             Services That{" "}
             <span className="bg-gradient-to-r from-teal to-teal-dark bg-clip-text text-transparent">
               Drive Results
             </span>
           </h2>
-          
+
           <p className="text-muted-foreground text-lg lg:text-xl max-w-2xl mx-auto">
-            From concept to launch and beyond, we provide everything you need 
+            From concept to launch and beyond, we provide everything you need
             to establish a powerful online presence that grows with your business.
           </p>
         </motion.div>
@@ -178,9 +178,9 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <ServiceCard 
-              key={service.title} 
-              service={service} 
+            <ServiceCard
+              key={service.title}
+              service={service}
               index={index}
               isActive={activeCard === index}
               onHover={setActiveCard}
