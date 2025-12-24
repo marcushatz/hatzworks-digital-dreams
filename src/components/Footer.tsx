@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Linkedin, Twitter, Instagram, Mail, ArrowUpRight } from "lucide-react";
-import logo from "@/assets/hatzworks-logo.png";
+import logo from "@/assets/hatwebs-logo.png";
 
 const footerLinks = {
   services: [
@@ -54,7 +54,7 @@ const Footer = () => {
                 className="inline-block mb-6"
                 whileHover={{ scale: 1.02 }}
               >
-                <img src={logo} alt="Hatzworks" className="h-14 w-auto" />
+                <img src={logo} alt="Hatwebs" className="h-14 w-auto" />
               </motion.a>
 
               <p className="text-primary-foreground/60 leading-relaxed mb-6 max-w-sm">
@@ -146,13 +146,13 @@ const Footer = () => {
               </h4>
               <div className="space-y-4">
                 <a
-                  href="mailto:hello@hatzworks.com"
+                  href="mailto:hello@hatwebs.com"
                   className="flex items-center gap-3 text-primary-foreground/60 hover:text-teal-light transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center group-hover:bg-teal/20 transition-colors">
                     <Mail className="w-5 h-5 text-teal-light" />
                   </div>
-                  <span className="text-sm">hello@hatzworks.com</span>
+                  <span className="text-sm">hello@hatwebs.com</span>
                 </a>
               </div>
 
@@ -179,7 +179,7 @@ const Footer = () => {
         <div className="py-6 border-t border-white/5">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/40 text-sm flex items-center gap-1">
-              © {currentYear} Hatzworks.
+              © {currentYear} Hatwebs.
             </p>
 
             <div className="flex items-center gap-6 text-sm">
@@ -200,7 +200,7 @@ const Footer = () => {
       {/* Large background text */}
       <div className="absolute bottom-0 left-0 right-0 overflow-hidden pointer-events-none">
         <div className="font-heading text-[20vw] font-bold text-primary-foreground/[0.02] leading-none tracking-tighter text-center">
-          HATZWORKS
+          HATWEBS
         </div>
       </div>
     </footer>

@@ -7,7 +7,7 @@ const testimonials = [
     name: "Sarah Mitchell",
     role: "CEO, TechFlow Inc.",
     company: "TechFlow",
-    content: "Hatzworks transformed our online presence completely. Our new website has increased leads by 300% and our customers love the modern design. The team's attention to detail and creative vision exceeded all expectations.",
+    content: "Hatwebs transformed our online presence completely. Our new website has increased leads by 300% and our customers love the modern design. The team's attention to detail and creative vision exceeded all expectations.",
     rating: 5,
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
     metric: { value: "+300%", label: "Lead Increase" },
@@ -25,7 +25,7 @@ const testimonials = [
     name: "Emily Chen",
     role: "Marketing Director, Bloom Co.",
     company: "Bloom Co.",
-    content: "The team at Hatzworks truly understands design. They created a website that perfectly captures our brand essence and converts visitors into customers. A game-changer for our business.",
+    content: "The team at Hatwebs truly understands design. They created a website that perfectly captures our brand essence and converts visitors into customers. A game-changer for our business.",
     rating: 5,
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
     metric: { value: "85%", label: "Conversion Rate" },
@@ -34,19 +34,19 @@ const testimonials = [
     name: "Michael Foster",
     role: "CTO, InnovateTech",
     company: "InnovateTech",
-    content: "Working with Hatzworks was a seamless experience. Their technical expertise and creative solutions helped us launch a product that our users absolutely love. Highly recommended!",
+    content: "Working with Hatwebs was a seamless experience. Their technical expertise and creative solutions helped us launch a product that our users absolutely love. Highly recommended!",
     rating: 5,
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
     metric: { value: "50K+", label: "Active Users" },
   },
 ];
 
-const TestimonialCard = ({ 
-  testimonial, 
+const TestimonialCard = ({
+  testimonial,
   isActive,
-  direction 
-}: { 
-  testimonial: typeof testimonials[0]; 
+  direction
+}: {
+  testimonial: typeof testimonials[0];
   isActive: boolean;
   direction: number;
 }) => {
@@ -61,7 +61,7 @@ const TestimonialCard = ({
       <div className="relative bg-card rounded-3xl p-8 md:p-12 shadow-xl border border-border/50 overflow-hidden">
         {/* Background decoration */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-teal/5 to-transparent rounded-full blur-3xl" />
-        
+
         {/* Quote icon */}
         <motion.div
           initial={{ scale: 0, rotate: -180 }}
@@ -196,17 +196,17 @@ const Testimonials = () => {
           >
             Client Love
           </motion.span>
-          
+
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mt-4 mb-6">
             What Our{" "}
             <span className="bg-gradient-to-r from-teal to-teal-dark bg-clip-text text-transparent">
               Clients Say
             </span>
           </h2>
-          
+
           <p className="text-muted-foreground text-lg lg:text-xl max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what industry leaders say about 
-            their experience working with Hatzworks.
+            Don't just take our word for it. Here's what industry leaders say about
+            their experience working with Hatwebs.
           </p>
         </motion.div>
 
@@ -244,11 +244,10 @@ const Testimonials = () => {
                   className="group p-1"
                 >
                   <motion.div
-                    className={`h-2 rounded-full transition-all ${
-                      index === currentIndex 
-                        ? "w-8 bg-teal" 
+                    className={`h-2 rounded-full transition-all ${index === currentIndex
+                        ? "w-8 bg-teal"
                         : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                    }`}
+                      }`}
                     layoutId="testimonialDot"
                   />
                 </button>

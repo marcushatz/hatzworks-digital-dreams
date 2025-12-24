@@ -1,8 +1,8 @@
-# Hatzworks Digital Dreams
+# Hatwebs Digital Dreams
 
 ## Project info
 
-A premium web development project by Hatzworks.
+A premium web development project by Hatwebs.
 
 ## Development
 

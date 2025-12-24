@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/hatzworks-logo.png";
+import logo from "@/assets/hatwebs-logo.png";
 
 const navLinks = [
   { name: "Services", href: "#services" },
@@ -15,13 +15,13 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const { scrollY } = useScroll();
-  
+
   const navBackground = useTransform(
     scrollY,
     [0, 100],
     ["rgba(23, 37, 55, 0)", "rgba(23, 37, 55, 0.95)"]
   );
-  
+
   const navBlur = useTransform(
     scrollY,
     [0, 100],
@@ -67,7 +67,7 @@ const Navigation = () => {
           className="absolute inset-x-0 bottom-0 h-px bg-teal"
           style={{ opacity: borderOpacity }}
         />
-        
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
@@ -78,7 +78,7 @@ const Navigation = () => {
               whileTap={{ scale: 0.98 }}
             >
               <div className="absolute -inset-3 bg-teal/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
-              <img src={logo} alt="Hatzworks" className="h-12 w-auto relative" />
+              <img src={logo} alt="Hatwebs" className="h-12 w-auto relative" />
             </motion.a>
 
             {/* Desktop Navigation */}
@@ -91,14 +91,13 @@ const Navigation = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <span className={`relative z-10 font-medium transition-colors ${
-                    activeSection === link.href.slice(1)
+                  <span className={`relative z-10 font-medium transition-colors ${activeSection === link.href.slice(1)
                       ? "text-teal-light"
                       : "text-primary-foreground/80 group-hover:text-teal-light"
-                  }`}>
+                    }`}>
                     {link.name}
                   </span>
-                  
+
                   {/* Active indicator */}
                   {activeSection === link.href.slice(1) && (
                     <motion.div
@@ -107,7 +106,7 @@ const Navigation = () => {
                       transition={{ type: "spring", duration: 0.5 }}
                     />
                   )}
-                  
+
                   {/* Hover indicator */}
                   <motion.div
                     className="absolute inset-0 bg-teal/5 rounded-lg opacity-0 group-hover:opacity-100"
@@ -175,7 +174,7 @@ const Navigation = () => {
               onClick={() => setIsOpen(false)}
               className="fixed inset-0 bg-navy/80 backdrop-blur-sm z-40 md:hidden"
             />
-            
+
             {/* Menu panel */}
             <motion.div
               initial={{ opacity: 0, x: "100%" }}
@@ -201,7 +200,7 @@ const Navigation = () => {
                     </motion.a>
                   ))}
                 </div>
-                
+
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -217,7 +216,7 @@ const Navigation = () => {
                 {/* Decorative elements */}
                 <div className="absolute bottom-8 left-6 right-6">
                   <div className="text-primary-foreground/30 text-sm">
-                    © 2024 Hatzworks
+                    © 2024 Hatwebs
                   </div>
                 </div>
               </div>

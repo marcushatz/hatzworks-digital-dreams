@@ -24,7 +24,7 @@ const Contact = () => {
     <section id="contact" className="py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-hero" />
-      
+
       {/* Animated gradient orbs */}
       <motion.div
         className="absolute top-0 left-0 w-[600px] h-[600px] rounded-full"
@@ -50,7 +50,7 @@ const Contact = () => {
       />
 
       {/* Grid pattern */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
           backgroundImage: `
@@ -93,14 +93,14 @@ const Contact = () => {
             </h2>
 
             <p className="text-primary-foreground/70 text-lg mb-10 leading-relaxed">
-              Let's discuss your project and discover how we can help bring your vision to life. 
+              Let's discuss your project and discover how we can help bring your vision to life.
               Get in touch for a free consultation and let's start building something extraordinary together.
             </p>
 
             {/* Contact info cards */}
             <div className="space-y-4 mb-10">
               {[
-                { icon: Mail, label: "Email Us", value: "hello@hatzworks.com" },
+                { icon: Mail, label: "Email Us", value: "hello@hatwebs.com" },
                 { icon: Phone, label: "Call Us", value: "+1 (555) 123-4567" },
                 { icon: MapPin, label: "Visit Us", value: "San Francisco, CA" },
               ].map((item, index) => (
@@ -132,7 +132,7 @@ const Contact = () => {
             <div className="relative">
               {/* Glow effect */}
               <div className="absolute -inset-1 bg-gradient-to-r from-teal/30 via-teal/10 to-teal/30 rounded-3xl blur-xl opacity-50" />
-              
+
               <form
                 onSubmit={handleSubmit}
                 className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-10"
