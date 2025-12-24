@@ -238,7 +238,7 @@ const Hero = () => {
           transition={{ duration: 1.5, repeat: Infinity }}
           className="flex flex-col items-center gap-2"
         >
-          <span className="text-primary-foreground/70 text-xs uppercase tracking-widest">Scroll</span>
+          <span className="text-primary-foreground/40 text-xs uppercase tracking-widest">Scroll</span>
           <div className="w-6 h-10 rounded-full border-2 border-primary-foreground/20 flex justify-center pt-2">
             <motion.div
               animate={{ y: [0, 12, 0], opacity: [1, 0.3, 1] }}

@@ -92,8 +92,8 @@ const Navigation = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   <span className={`relative z-10 font-medium transition-colors ${activeSection === link.href.slice(1)
-                    ? "text-teal-light"
-                    : "text-primary-foreground/80 group-hover:text-teal-light"
+                      ? "text-teal-light"
+                      : "text-primary-foreground/80 group-hover:text-teal-light"
                     }`}>
                     {link.name}
                   </span>
@@ -129,7 +129,6 @@ const Navigation = () => {
 
             {/* Mobile Menu Button */}
             <motion.button
-              aria-label="Toggle Menu"
               className="md:hidden relative w-12 h-12 flex items-center justify-center"
               onClick={() => setIsOpen(!isOpen)}
               whileTap={{ scale: 0.9 }}
