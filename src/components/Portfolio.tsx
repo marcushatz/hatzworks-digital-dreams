@@ -94,6 +94,9 @@ const PortfolioCard = ({
           src={project.image}
           alt={project.title}
           className="w-full h-full object-cover"
+          width={index === 0 || index === 3 ? 1600 : 800}
+          height={index === 0 || index === 3 ? 800 : 800}
+          loading={index < 2 ? "eager" : "lazy"}
         />
       </motion.div>
 
@@ -141,10 +144,14 @@ const PortfolioCard = ({
             animate={{ opacity: isHovered ? 1 : 0, x: isHovered ? 0 : 20 }}
             transition={{ duration: 0.3 }}
           >
-            <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/30 transition-colors border border-white/20">
+            <button
+              aria-label="View Project Details"
+              className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/30 transition-colors border border-white/20">
               <Eye className="w-5 h-5" />
             </button>
-            <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/30 transition-colors border border-white/20">
+            <button
+              aria-label="Visit Project Site"
+              className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/30 transition-colors border border-white/20">
               <ExternalLink className="w-5 h-5" />
             </button>
           </motion.div>
