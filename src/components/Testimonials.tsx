@@ -173,7 +173,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="about" className="py-32 bg-background relative overflow-hidden">
+    <section id="about" className="py-32 bg-gradient-to-br from-secondary to-slate/20 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-radial from-teal/5 to-transparent" />
@@ -245,8 +245,8 @@ const Testimonials = () => {
                 >
                   <motion.div
                     className={`h-2 rounded-full transition-all ${index === currentIndex
-                        ? "w-8 bg-teal"
-                        : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                      ? "w-8 bg-teal"
+                      : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
                       }`}
                     layoutId="testimonialDot"
                   />

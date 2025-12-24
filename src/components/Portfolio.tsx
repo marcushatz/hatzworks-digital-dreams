@@ -225,7 +225,7 @@ const Portfolio = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   return (
-    <section id="portfolio" className="py-32 bg-gradient-to-br from-secondary to-slate/20 relative overflow-hidden">
+    <section id="portfolio" className="py-32 bg-navy relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -251,19 +251,19 @@ const Portfolio = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isHeaderInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ delay: 0.2 }}
-            className="inline-block text-teal font-semibold text-sm uppercase tracking-[0.2em] mb-4 px-4 py-2 rounded-full bg-teal/10 border border-teal/20"
+            className="inline-block text-teal-light font-semibold text-sm uppercase tracking-[0.2em] mb-4 px-4 py-2 rounded-full bg-teal/10 border border-teal/20"
           >
             Our Portfolio
           </motion.span>
 
-          <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mt-4 mb-6">
+          <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-4 mb-6">
             Featured{" "}
-            <span className="bg-gradient-to-r from-teal to-teal-dark bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-teal-light to-teal bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
 
-          <p className="text-muted-foreground text-lg lg:text-xl max-w-2xl mx-auto">
+          <p className="text-white/60 text-lg lg:text-xl max-w-2xl mx-auto">
             A curated showcase of our finest work, where creativity meets functionality
             to deliver exceptional digital experiences.
           </p>
