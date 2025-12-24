@@ -6,7 +6,7 @@ import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import ParticleField from "@/components/ParticleField";
+
 import CursorGlow from "@/components/CursorGlow";
 import FloatingElements from "@/components/FloatingElements";
 
@@ -14,15 +14,15 @@ const Index = () => {
   return (
     <main className="min-h-screen relative overflow-hidden">
       {/* Global effects */}
-      <ParticleField />
+
       <CursorGlow />
       <FloatingElements />
-      
+
       {/* Content */}
       <div className="relative z-10">
         <Navigation />
         <Hero />
-        
+
         {/* Smooth section transitions */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -32,7 +32,7 @@ const Index = () => {
         >
           <Services />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -41,7 +41,7 @@ const Index = () => {
         >
           <Portfolio />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -50,7 +50,7 @@ const Index = () => {
         >
           <Testimonials />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -59,7 +59,7 @@ const Index = () => {
         >
           <Contact />
         </motion.div>
-        
+
         <Footer />
       </div>
     </main>
