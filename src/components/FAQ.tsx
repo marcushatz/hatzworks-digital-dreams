@@ -102,16 +102,16 @@ const FAQ = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className={`bg-navy/80 backdrop-blur-sm border transition-all duration-300 rounded-xl overflow-hidden ${openIndex === index ? 'border-teal shadow-lg shadow-teal/5' : 'border-white/5 hover:border-white/10'}`}
+                                className={`border transition-all duration-300 rounded-xl overflow-hidden ${openIndex === index ? 'bg-[#F8FAFC] border-[#3b82f6] shadow-lg' : 'bg-white border-slate-200 hover:border-slate-300 hover:shadow-md'}`}
                             >
                                 <button
                                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
                                     className="w-full flex items-center justify-between p-6 text-left"
                                 >
-                                    <span className={`font-heading font-bold text-lg pr-8 transition-colors ${openIndex === index ? 'text-teal' : 'text-slate-200'}`}>
+                                    <span className={`font-heading font-bold text-lg pr-8 transition-colors ${openIndex === index ? 'text-[#0f172a]' : 'text-[#1e293b]'}`}>
                                         {faq.question}
                                     </span>
-                                    <span className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${openIndex === index ? 'bg-teal text-navy rotate-180' : 'bg-white/5 text-slate-400'}`}>
+                                    <span className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${openIndex === index ? 'bg-[#3b82f6] text-white rotate-180' : 'bg-slate-100 text-[#64748b]'}`}>
                                         {openIndex === index ? <Minus className="w-4 h-4 font-bold" /> : <Plus className="w-4 h-4" />}
                                     </span>
                                 </button>
@@ -123,7 +123,7 @@ const FAQ = () => {
                                             animate={{ height: "auto", opacity: 1 }}
                                             exit={{ height: 0, opacity: 0 }}
                                         >
-                                            <div className="px-6 pb-6 text-slate-400 leading-relaxed font-medium">
+                                            <div className="px-6 pb-6 text-[#475569] leading-relaxed font-medium">
                                                 {faq.answer}
                                             </div>
                                         </motion.div>

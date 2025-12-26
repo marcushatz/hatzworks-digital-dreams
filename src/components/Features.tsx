@@ -113,14 +113,12 @@ const Features = () => {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
                         >
-                            <div className="group h-full bg-white/[0.03] border border-white/5 rounded-2xl hover:bg-white/[0.05] hover:border-teal/30 transition-all duration-300 hover:-translate-y-1 p-8">
-
-                                <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                    <feature.icon className="w-7 h-7 text-teal" />
+                            <div className="h-full bg-white rounded-2xl p-8 transition-all duration-300 group hover:-translate-y-1 hover:shadow-2xl shadow-md">
+                                <div className="w-12 h-12 rounded-2xl bg-[#eff6ff] flex items-center justify-center mb-6">
+                                    <feature.icon className="w-6 h-6 text-[#3b82f6]" />
                                 </div>
-
-                                <h3 className="font-heading text-xl font-bold mb-3 text-white group-hover:text-teal-light transition-colors">{feature.title}</h3>
-                                <p className="text-slate-400 leading-relaxed font-medium">
+                                <h3 className="font-heading text-xl font-bold mb-3 text-[#0f172a]">{feature.title}</h3>
+                                <p className="text-[#475569] leading-relaxed font-normal">
                                     {feature.description}
                                 </p>
                             </div>

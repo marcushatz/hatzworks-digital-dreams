@@ -24,12 +24,12 @@ const steps = [
 
 const Guarantee = () => {
     return (
-        <section className="py-24 md:py-36 relative overflow-hidden bg-background">
-            {/* Soft Navy Gradient - Clean & Balanced */}
-            <div className="absolute inset-0 bg-gradient-to-b from-background via-navy/5 to-navy/10 pointer-events-none" />
+        <section className="py-24 md:py-36 relative overflow-hidden bg-[#F8FAFC]">
+            {/* Soft blue gradient decoration */}
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-blue-50/30 to-transparent pointer-events-none" />
 
-            {/* Decorative gradient orb - lighter and more subtle */}
-            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-teal/5 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+            {/* Decorative gradient orb */}
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none" />
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-20">
@@ -37,10 +37,10 @@ const Guarantee = () => {
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-flex items-center gap-2 bg-white/5 border border-teal/10 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm"
+                        className="inline-flex items-center gap-2 bg-[#eff6ff] rounded-full px-4 py-1.5 mb-6"
                     >
-                        <ShieldCheck className="w-4 h-4 text-teal" />
-                        <span className="text-teal text-sm font-semibold tracking-wide uppercase">Zero-Risk Build Guarantee</span>
+                        <ShieldCheck className="w-4 h-4 text-[#3b82f6]" />
+                        <span className="text-[#3b82f6] text-sm font-semibold tracking-wide uppercase">Zero-Risk Build Guarantee</span>
                     </motion.div>
 
                     <motion.h2
@@ -48,10 +48,10 @@ const Guarantee = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6"
+                        className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-[#0f172a] mb-6"
                     >
                         Your satisfaction is our{" "}
-                        <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-teal to-teal-dark">
+                        <span className="text-[#3b82f6]">
                             only metric.
                         </span>
                     </motion.h2>
@@ -61,11 +61,11 @@ const Guarantee = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="text-xl text-muted-foreground leading-relaxed mb-8"
+                        className="text-xl text-[#64748b] leading-relaxed mb-8"
                     >
                         If you don't love the first version, you don't pay. <br className="hidden md:block" />
                         We refund your $1 — no awkward calls. <br />
-                        <span className="text-foreground font-medium">You only continue if you're excited.</span>
+                        <span className="text-[#0f172a] font-medium">You only continue if you're excited.</span>
                     </motion.p>
                 </div>
 
@@ -88,22 +88,22 @@ const Guarantee = () => {
                                 {/* Soft Glow */}
                                 <div className="absolute inset-0 bg-teal/5 rounded-full blur-xl group-hover:bg-teal/10 transition-all duration-500" />
 
-                                <div className="relative w-full h-full rounded-2xl rotate-45 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 dark:bg-navy-light dark:border-white/5 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:rotate-12 group-hover:scale-105">
+                                <div className="relative w-full h-full rounded-2xl rotate-45 bg-white shadow-md border border-slate-200 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:rotate-12 group-hover:scale-105">
                                     <motion.div
                                         className="-rotate-45 group-hover:-rotate-12 transition-transform duration-300"
                                     >
-                                        <step.icon className="w-10 h-10 text-teal relative z-10" />
+                                        <step.icon className="w-10 h-10 text-[#3b82f6] relative z-10" />
                                     </motion.div>
                                 </div>
 
                                 {/* High Contrast Badge */}
-                                <div className="absolute -top-4 -right-4 w-9 h-9 rounded-full bg-navy text-white font-bold flex items-center justify-center text-sm z-20 shadow-lg border border-white/10">
+                                <div className="absolute -top-4 -right-4 w-9 h-9 rounded-full bg-[#3b82f6] text-white font-bold flex items-center justify-center text-sm z-20 shadow-lg">
                                     {step.number}
                                 </div>
                             </div>
 
-                            <h3 className="text-2xl font-bold font-heading mb-3 text-foreground group-hover:text-teal transition-colors duration-300">{step.title}</h3>
-                            <p className="text-muted-foreground max-w-xs leading-relaxed">{step.description}</p>
+                            <h3 className="text-2xl font-bold font-heading mb-3 text-[#0f172a] group-hover:text-[#3b82f6] transition-colors duration-300">{step.title}</h3>
+                            <p className="text-[#64748b] max-w-xs leading-relaxed">{step.description}</p>
                         </motion.div>
                     ))}
                 </div>

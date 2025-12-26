@@ -60,19 +60,19 @@ const PortfolioCard = ({
           />
         </motion.div>
 
-        {/* Deep Gradient Overlay - Always visible but stronger at bottom */}
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-transparent opacity-90 transition-opacity duration-300" />
+        {/* Light Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-100/90 via-slate-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
 
       {/* Content */}
       <div className="absolute inset-0 p-8 flex flex-col justify-between">
         {/* Top Tags */}
         <div className="flex justify-between items-start translate-y-[-10px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-          <span className="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-white/90 text-xs font-medium border border-white/10">
+          <span className="px-3 py-1 rounded-full bg-blue-50 text-[#3b82f6] text-xs font-semibold border border-blue-100">
             {project.category}
           </span>
           {isComingSoon && (
-            <span className="px-3 py-1 rounded-full bg-black/40 backdrop-blur-md text-white/70 text-xs font-medium flex items-center gap-1.5 border border-white/5">
+            <span className="px-3 py-1 rounded-full bg-slate-100 text-[#64748b] text-xs font-medium flex items-center gap-1.5 border border-slate-200">
               <Clock className="w-3 h-3" /> Pending
             </span>
           )}
@@ -80,16 +80,16 @@ const PortfolioCard = ({
 
         {/* Bottom Info */}
         <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-          <h3 className="font-heading text-2xl md:text-3xl font-bold text-white mb-2 tracking-tight">
+          <h3 className="font-heading text-2xl md:text-3xl font-bold text-[#0f172a] mb-2 tracking-tight">
             {project.title}
           </h3>
-          <p className="text-slate-300 text-sm mb-6 line-clamp-2 max-w-[90%] opacity-80 group-hover:opacity-100 transition-opacity">
+          <p className="text-[#64748b] text-sm mb-6 line-clamp-2 max-w-[90%] group-hover:opacity-100 transition-opacity">
             {project.description}
           </p>
 
-          <div className="flex items-center gap-2 text-teal font-medium text-sm overflow-hidden h-0 group-hover:h-auto opacity-0 group-hover:opacity-100 transition-all duration-300 delay-75">
+          <div className="flex items-center gap-2 text-[#3b82f6] font-medium text-sm overflow-hidden h-0 group-hover:h-auto opacity-0 group-hover:opacity-100 transition-all duration-300 delay-75">
             {isComingSoon ? (
-              <span className="text-white/50">Coming Soon</span>
+              <span className="text-[#94a3b8]">Coming Soon</span>
             ) : (
               <>
                 <span>Visit Website</span>
@@ -107,9 +107,9 @@ const Portfolio = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   return (
-    <section className="py-32 relative bg-navy" id="portfolio">
+    <section className="py-32 relative bg-[#F8FAFC]" id="portfolio">
       {/* Soft Spotlights */}
-      <div className="absolute top-0 left-1/4 w-[1000px] h-[600px] bg-teal/5 rounded-full blur-[150px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-[1000px] h-[600px] bg-blue-500/5 rounded-full blur-[150px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
@@ -118,7 +118,7 @@ const Portfolio = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 text-teal-light font-medium text-xs uppercase tracking-[0.2em] mb-6 px-4 py-2 rounded-full bg-white/5 border border-white/5"
+            className="inline-flex items-center gap-2 text-[#3b82f6] font-medium text-xs uppercase tracking-[0.2em] mb-6 px-4 py-2 rounded-full bg-[#eff6ff]"
           >
             <Sparkles className="w-3 h-3" />
             Our Work
@@ -128,7 +128,7 @@ const Portfolio = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight"
+            className="font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-[#0f172a] mb-6 tracking-tight"
           >
             Built for performance.
           </motion.h2>
