@@ -1,14 +1,17 @@
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import Portfolio from "@/components/Portfolio";
-import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 import CursorGlow from "@/components/CursorGlow";
 import FloatingElements from "@/components/FloatingElements";
+
+import Guarantee from "@/components/Guarantee";
+import Features from "@/components/Features";
+import Portfolio from "@/components/Portfolio";
+import Pricing from "@/components/Pricing";
+import FAQ from "@/components/FAQ";
+import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
   return (
@@ -23,42 +26,12 @@ const Index = () => {
         <Navigation />
         <Hero />
 
-        {/* Smooth section transitions */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <Services />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <Portfolio />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <Testimonials />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <Contact />
-        </motion.div>
+        <Guarantee />
+        <Features />
+        <Portfolio />
+        <Pricing />
+        <FAQ />
+        <FinalCTA />
 
         <Footer />
       </div>
